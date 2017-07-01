@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delta.app_dev2.MainActivity"
+    android:background="@android:color/holo_orange_light"
+    android:id="@+id/relative">
+
+    <ImageView
+
+        android:id="@+id/delta"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/delta"
+
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add From Gallery"
+        android:textColor="@android:color/holo_blue_bright"
+
+        android:layout_below="@+id/delta"
+
+       />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take-a-shot !"
+        android:textColor="@android:color/holo_blue_bright"
+
+        android:layout_below="@+id/button1"
+
+        />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:hint="Enter Position To Be Removed   :"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit1"
+        android:hint="Enter Position To Be Cropped  :"
+        android:inputType="numberDecimal"/>
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Del"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_toLeftOf="@+id/edit1"
+        android:layout_below="@+id/image1"/>
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Ok"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_toLeftOf="@+id/edit2"
+        android:layout_below="@+id/button3"/>
+
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                                                             Recently Added :
+                                             "
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/space3"
+
+        />
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_below="@+id/recent"/>
+
+    <ImageView
+
+        android:id="@+id/image1"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@+id/space2"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_below="@+id/image1"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit2"
+        >
+
+    </ListView>
+
+
+</RelativeLayout>

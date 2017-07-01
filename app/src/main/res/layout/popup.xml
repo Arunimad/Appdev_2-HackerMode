@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+
+    <EditText
+        android:id="@+id/cwidth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Width"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/cheight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Height"
+        android:layout_below="@+id/cwidth1"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cheight1"
+        android:text="OK"
+        />
+
+</RelativeLayout>
